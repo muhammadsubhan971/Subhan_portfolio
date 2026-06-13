@@ -20,7 +20,7 @@ export function ParticleField() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const particles = useRef<Particle[]>([])
   const mouse = useRef({ x: -1000, y: -1000 })
-  const animationFrameId = useRef<number>()
+  const animationFrameId = useRef<number | null>(null)
 
   useEffect(() => {
     const canvas = canvasRef.current
