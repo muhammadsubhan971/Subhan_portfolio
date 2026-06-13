@@ -1,5 +1,12 @@
 'use client'
 
+import dynamic from 'next/dynamic'
+
+const Spline = dynamic(() => import('@splinetool/react-spline'), {
+  ssr: false,
+  loading: () => <div>Loading 3D...</div>
+})
+
 import { Suspense, lazy } from 'react'
 const Spline = lazy(() => import('@splinetool/react-spline'))
 
