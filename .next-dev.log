@@ -10,3 +10,7 @@ Creating turbopack project { dir: 'D:\\portfolio-muhammad-subhan_new', testMode:
 
 ○ Compiling / ...
  GET / 200 in 32.6s (next.js: 29.2s, application-code: 3.4s)
+# add to .gitignore
+.next-dev.log
+.next-dev.err.log
+.next/
